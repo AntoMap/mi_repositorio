@@ -1,0 +1,172 @@
+.carouselControls {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    max-width: 100%;
+    height: auto;
+}
+
+.textoCarousel {
+    color: $color-secundario;
+    text-align: center;
+    text-shadow: $color-principal 0.1em 0.1em 0.2em;
+    padding-top: 1em;
+    font-size: larger;
+}
+
+.logoCarousel {
+    text-align: center;
+    text-shadow: $color-principal 0.1em 0.1em 0.2em;
+    padding-top: 1em;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out,
+        -webkit-transform 0.6s ease-in-out;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $color-principal;
+    font-size: 50px;
+    text-align: center;
+}
+/*Estilo de Cards de información*/
+.container__cardsHome {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    gap: 10px;
+    margin: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius: 0px 30px 0px 30px;
+    overflow: hidden;
+
+    .imgCards {
+        border-radius: 0px 30px 0px
+    }
+}
+
+.botonVerMas {
+    background: $color-btn;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: $color-terciario;
+
+    &:hover {
+        color: $color-principal;
+        text-decoration: underline;
+    }
+}
+
+/*estilo Perfil*/
+
+.perfil {
+    background-color: $color-secundario;
+    padding: 0px 70px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .rounded-circle {
+        box-shadow: 2px 2px 15px 6px $color-principal;
+    }
+
+    .perfilInfo {
+        text-align: center;
+        font-size: 30px;
+        color: $color-principal;
+        margin-left: 20px;
+    }
+
+    .cuerpoPerfil {
+        font-size: 13px;
+        font-family: $fuentes-secundaria;
+        font-style: normal;
+        padding-top: 60px;
+        color: black;
+    }
+
+    .subtituloPerfil {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        color: $color-terciario;
+        font-size: 13px;
+        line-height: 0px;
+        font-weight: bold;
+    }
+}
+
+/*estilo novedades*/
+.tituloN {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 10px;
+    align-items: center;
+    text-align: center;
+    color: $color-principal;
+    padding: 2rem;
+}
+
+.container__novedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    gap: 10px;
+
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        border-radius: 0 0 15px 15px;
+
+    }
+
+    .pie {
+        background: $color-terciario;
+        border-radius: 0 0 15px 15px;
+        text-align: center;
+        width: 250px;
+        height: auto;
+        padding: 15px;
+        text-decoration: none;
+
+    }
+
+    &:hover {
+        color:$color-terciario;
+    }
+}

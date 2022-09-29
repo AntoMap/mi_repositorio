@@ -1,0 +1,77 @@
+@media only screen and (max-width: 768px) {};
+@media only screen and (max-width:576px) {
+    /*responsive generales*/
+    /*tap bar*/
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        align-items: center;
+    }
+
+    /*footer*/
+    footer {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*responsive index*/
+    .perfil {
+        flex-direction: column-reverse;
+    }
+   
+    h3 {
+        text-orientation: vertical;
+    }
+    .subtituloPerfil {
+        visibility: hidden; 
+        display: none;
+    }
+    .container__cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .container__cardsHome {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+
+    .container__novedades {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .container__redes {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*responsive proyectos/*
+        /*galeria*/
+    .container__galeria {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .imgGaleria {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}

@@ -1,0 +1,151 @@
+/*general*/
+
+body {
+    font-family: map-get($map: $menu, $key: font-family );
+    letter-spacing: 0.2rem;
+    overflow-x: hidden;
+    background-color: nth($colores,3 );
+}
+
+/*boton Wtp*/
+#btn-mas {
+    display: none;
+}
+
+.contenerdorIcon {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+/*general*/
+
+.titulo {
+    font-family: $fuente-principal;
+    font-size: 20px;
+    top: 100px;
+    padding: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 10px;
+    align-items: center;
+    text-align: center;
+    color: nth($colores ,1);
+}
+
+.subtitulo {
+    font-family: $fuente-principal;
+    font-size: 18px;
+    color: $color-principal;
+    font-style: bold;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+
+.cuerpo {
+    font-family: $fuentes-secundaria;
+    font-style: normal;
+    font-size: 11px;
+    padding: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.lineaDivisora {
+    size: 10px;
+    height: 10px;
+    width: 100%;
+    padding: 2px;
+    color: nth($colores,1 );
+}
+
+
+/*estilo tap bar*/
+.menu {
+    font-size: 20px;
+    background-color: $color-secundario;
+    list-style-type: none;
+    color: $color-principal;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .logoM {
+        background-color: $color-secundario;
+        border: 5px solid nth($colores,4 );
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        border-radius: 100%;
+    }
+
+
+    .lista {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        color: $color-principal;
+    }
+
+    .link {
+        color: $color-principal;
+        text-decoration: none;
+
+        &:focus {
+            color: $color-terciario;
+            text-decoration: solid;
+        }
+
+        &:hover {
+            color: $color-terciario;
+            text-decoration: underline;
+        }
+    }
+}
+
+/*estilo nevegacion inferior*/
+.containerContacto {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: $color-secundario;
+    margin: 0px;
+}
+
+.linkC {
+    text-decoration: none;
+    color: $color-principal;
+    font-size: 15px;
+
+    &:hover {
+        color: $color-terciario;
+        text-decoration: underline;
+    }
+}
+
+/*EStilo Barra inferior*/
+
+.barraInferior {
+    background-color: map-get($map:$menu, $key:background-color);
+
+
+    footer {
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+        color: $color-btn;
+    }
+
+    .col {
+        font-size: 14px;
+        margin: 1rem;
+    }
+}
