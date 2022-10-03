@@ -73,15 +73,15 @@
 }
 
 .botonVerMas {
-    background: $color-btn;
+    background: $bg-colorS;
     border-radius: 0 0 15px 15px;
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    color: $color-terciario;
+    color: $color-principal;
 
     &:hover {
-        color: $color-principal;
+        color: $color-terciario;
         text-decoration: underline;
     }
 }

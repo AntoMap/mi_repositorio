@@ -12,7 +12,7 @@
 }
 
 .container__novedades .pie {
-  @include bn-verM ($bg-colorS,$color-principal);
+  @include bn-verM ($bg-colorS,$color-terciario);
 }
 .container__novedades .pie:hover{
 @include bn-verM($bg-colorP,$color-terciario )
