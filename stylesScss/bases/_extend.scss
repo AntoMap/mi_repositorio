@@ -1,6 +1,61 @@
-%disposicion{
+%disposicion {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+%cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    font-size: 20px;
+    background-color: $color-secundario;
+    list-style-type: none;
+    color: $color-principal;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    @extend %cards
+}
+
+.menu .lista {
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    color: $color-principal;
+    @extend %disposicion
+}
+
+.cards {
+    justify-content: space-between;
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.8196078431);
+    border-radius: 0px 30px 0px 30px;
+    overflow: hidden;
+    @extend %cards
+}
+
+.perfil {
+    background-color: $color-secundario;
+    padding: 0px 70px;
+    margin: auto;
+    @extend %disposicion
+}
+
+.container__novedades .tarjeta {
+    @extend %cards;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.8196078431);
+    border-radius: 0 0 15px 15px;
 }

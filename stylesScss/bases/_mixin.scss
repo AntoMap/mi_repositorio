@@ -1,0 +1,19 @@
+@mixin bn-verM ($bn-color,$color) {
+  background: $bn-color;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: $color;
+}
+
+.botonVerMas {
+  @include bn-verM ($bg-colorP,$color-principal);
+}
+
+.container__novedades .pie {
+  @include bn-verM ($bg-colorS,$color-principal);
+}
+.container__novedades .pie:hover{
+@include bn-verM($bg-colorP,$color-terciario )
+}
