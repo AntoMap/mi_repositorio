@@ -92,15 +92,35 @@ body {
 }
 
 /*boton Wtp*/
+.contenerdorIcon {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  color:#425C81;
+  list-style-type: none;
+  text-decoration: none;
+  border-radius: 20px;
+  }
+  .contenerdorIcon :active{
+    text-decoration: none;
+    color:#425C81;
+  }
+  .contenerdorIcon :hover{
+    text-decoration: none;
+    color: #EDA148;
+  }
+.whatsapp{
+  background-color: opacify (rgba(#425C81, 0.5), 0.2);
+  list-style-type: none;
+  text-decoration: none;
+  color:#425C81;
+  border-color: #EDA148;
+
+}
 #btn-mas {
   display: none;
 }
 
-.contenerdorIcon {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-}
 
 /*general*/
 .titulo {
