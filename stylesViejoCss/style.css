@@ -9,13 +9,12 @@
 }
 
 .container__novedades .pie {
-  background: #EAE5D1;
+  background: #EDA148;
   border-radius: 0 0 15px 15px;
   padding: 10px;
   text-align: center;
-  font: bold;
   text-decoration: none;
-  color: #425C81;
+  color: #EDA148;
 }
 
 .container__novedades .pie:hover {
@@ -24,7 +23,7 @@
   padding: 10px;
   text-align: center;
   text-decoration: none;
-  color: #425C81;
+  color: #EDA148;
 }
 
 .perfil, .menu .lista {
@@ -89,32 +88,44 @@ body {
   font-family: "Aclonica", sans-serif;
   letter-spacing: 0.2rem;
   overflow-x: hidden;
-  background-color: #FAF8F3;
+  background-image: url(../imagenes/fondo\ imagen.jpg);
+  opacity: 0,6;
 }
 
 /*boton Wtp*/
+.contenerdorIcon {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+#btn-mas {
+  display: none;
+}
+
+.whatsapp {
+  border-color: #F2F0E9;
+  list-style-type: none;
+  background-color: #F2F0E9;
+  color: #425C81;
+}
+.whatsapp:focus {
+  color: #425C81;
+  text-decoration: none;
+}
+.whatsapp:hover {
+  color: #EDA148;
+  text-decoration: none;
+}
 
 .contenerdorIcon {
   position: fixed;
   bottom: 40px;
   right: 20px;
   list-style-type: none;
-  color: #EDA148;
+  color: #EAE5D1;
   border: #425C81;
   border-radius: 20px;
-}
-.whatsapp {
-  border-color: #EDA148;
-  list-style-type: none;
-  text-decoration: none;
-  color:#425C81;
-}
-.whatsapp:hover{
-  color:#EDA148;
-}
-
-#btn-mas {
-  display: none;
 }
 
 /*general*/
@@ -153,7 +164,7 @@ body {
   size: 10px;
   height: 10px;
   width: 100%;
-  padding: 5px;
+  padding: 2px;
   color: #425C81;
 }
 
@@ -289,9 +300,6 @@ body {
   justify-items: center;
   gap: 10px;
   margin: 2rem;
-  padding: 5%;
-  font: bold;
-  
 }
 
 .cards {
@@ -311,7 +319,7 @@ body {
 }
 
 .botonVerMas {
-  background: #EAE5D1;
+  background: #EDA148;
   border-radius: 0 0 15px 15px;
   padding: 10px;
   text-align: center;
@@ -319,7 +327,6 @@ body {
   color: #425C81;
 }
 .botonVerMas:hover {
-  background-color: #425C81;
   color: #EDA148;
   text-decoration: underline;
 }
@@ -376,8 +383,6 @@ body {
   grid-template-rows: repeat(1, 1fr);
   justify-items: center;
   gap: 10px;
-  padding: 10%;
-
 }
 .container__novedades .tarjeta {
   display: flex;
@@ -387,10 +392,6 @@ body {
   width: 250px;
   box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.8196078431);
   border-radius: 0 0 15px 15px;
-}
-.container__novedades .tarjeta .cuerpo{
-  color:#425C81;
-  
 }
 .container__novedades .pie {
   background: #EDA148;
@@ -424,80 +425,13 @@ body {
   justify-content: center;
 }
 
-.bodyForm {
-  background-color: #EAE5D1;
-  margin: 35px 250px;
-  padding: 40px;
-  border: 100px;
-}
-
-.buttonE {
-  color: #EDA148;
-}
-
-.btn-btn-primary {
-  color: #EDA148;
-}
-
-.mapaContacto {
-  padding: 10px;
-}
-
-.containerContacto {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: #EAE5D1;
-  margin: 0px;
-}
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: auto;
-  font-family: "Darker Grotesque", sans-serif;
-  font-size: 14px;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.mapaContacto {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 10px;
-  justify-content: space-between;
-  border: 1px solid lightgray;
-  box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.8196078431);
-  border-radius: 0px 15px 15px 0px;
-  font-family: "Aclonica", sans-serif;
-  width: 300px;
-  height: 400px;
-  left: 350px;
-  top: 150px;
-  background-color: beige;
-}
-
-button {
-  color: #EDA148;
-}
-
-.btn-btn-primary {
-  color: #EDA148;
-}
-.botonConsultar{
-  color:#EDA148
-}
-.col-12{
-  color: #EDA148;
-}
 .cardsPresupuesto {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: center;
   border: 1px solid lightgray;
   box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.8196078431);
   border-radius: 15px 0px 0px 15px;
@@ -506,78 +440,16 @@ button {
   height: 400px;
   left: 350px;
   top: 150px;
-  background-color: beige;
-}
-.imagenFondoServicio {
-  height: 2fr;
-  width: auto;
-    background-color: #F2F0E9;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
-.container-imagen-fondoS {
-  height: 10%;
-  padding: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.col-12.buttonE {
+  color: #EDA148;
 }
-.imgCards{
-  background-color: #EAE5D1;
-  
+
+.btn-btn-primary {
+  color: #EDA148;
 }
-.cardsI {
-  background-color: #EAE5D1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 250px;
-  height: 350px;
-  padding: 10px;
-  border: 1px solid lightgray;
-  box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.8196078431);
-  border-radius: 0px 30px 0px 30px;
-  overflow: hidden;
-}
-.cards .imgCards {
-  border-radius: 0px 30px 0px;
-}
-.container__cardsHomeS {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  justify-items: center;
-  gap: 10%;
- padding-right: 20%;
- 
-}
-.container__galeria{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  justify-items: center;
-  gap: 10px;
-  padding: 10%;
-  background-color: #F2F0E9;
-}
-.imgGaleria{
-  background-color:#425C81;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 350px;
-  padding: 10px;
-  border: 1px solid #EDA148;
-  box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.8196078431);
-  border-radius: 0px 30px 0px 30px;
-  overflow: hidden;
-}
-.cards .imgCards {
-  border-radius: 0px 30px 0px;
-}
+
 @media only screen and (max-width: 576px) {
   /*responsive generales*/
   /*tap bar*/

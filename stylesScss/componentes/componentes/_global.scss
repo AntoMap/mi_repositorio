@@ -1,41 +1,46 @@
 /*general*/
 
 body {
-    font-family: map-get($map: $menu, $key: font-family );
+    font-family: map-get($map: $menu, $key: font-family);
     letter-spacing: 0.2rem;
     overflow-x: hidden;
-    background-color: nth($colores,3 );
+    background-color: nth($colores, 3);
 }
 
 /*boton Wtp*/
-#btn-mas {
-    display: none;
-}
 
 .contenerdorIcon {
     position: fixed;
     bottom: 40px;
     right: 40px;
 }
-.whatsapp{
-    background-color: opacify(rgba(#425C81, 0.5), 0.2);
-    border-color: #EDA148;
-    list-style-type: none;
-  
-  }
-  #btn-mas {
+#btn-mas {
     display: none;
-  }
-  
-  .contenerdorIcon {
+}
+.whatsapp {
+    border-color: $bg-colorP;
+    list-style-type: none;
+    background-color: $bg-colorP;
+    color: $color-principal;
+    &:focus{
+        color: $color-principal;
+        text-decoration: none;
+    }
+    &:hover {
+        color: $color-terciario;
+        text-decoration: none;
+    }
+}
+.contenerdorIcon {
     position: fixed;
     bottom: 40px;
     right: 20px;
     list-style-type: none;
-    color: #EDA148;
-    border: #425C81;
+    color:$color-btn;
+    border: $color-principal;
     border-radius: 20px;
-  }
+}
+
 /*general*/
 
 .titulo {
@@ -48,7 +53,7 @@ body {
     line-height: 10px;
     align-items: center;
     text-align: center;
-    color: nth($colores ,1);
+    color: nth($colores , 1);
 }
 
 .subtitulo {
@@ -76,7 +81,7 @@ body {
     height: 10px;
     width: 100%;
     padding: 2px;
-    color: nth($colores,1 );
+    color: nth($colores, 1);
 }
 
 
@@ -96,7 +101,7 @@ body {
 
     .logoM {
         background-color: $color-secundario;
-        border: 5px solid nth($colores,4 );
+        border: 5px solid nth($colores, 4);
         box-shadow: 2px 2px 8px 4px #d3d3d3d1;
         border-radius: 100%;
     }
@@ -152,7 +157,7 @@ body {
 /*EStilo Barra inferior*/
 
 .barraInferior {
-    background-color: map-get($map:$menu, $key:background-color);
+    background-color: map-get($map: $menu, $key: background-color);
 
 
     footer {
