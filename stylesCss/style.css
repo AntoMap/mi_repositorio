@@ -479,17 +479,30 @@ body {
 }
 
 button {
-  color: #EDA148;
+  color: #425C81;
 }
 
 .btn-btn-primary {
+  color: #425C81;
+}
+.botonConsultar {
+  background: #425C81;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #EAE5D1;
+  border: none;
+  outline:none;
+}
+.botonConsultar:hover {
+  background-color: #425C81;
   color: #EDA148;
+  text-decoration: underline;
 }
-.botonConsultar{
-  color:#EDA148
-}
+
 .col-12{
-  color: #EDA148;
+  color: #425C81!important
 }
 .cardsPresupuesto {
   display: flex;
@@ -578,10 +591,11 @@ button {
 .cards .imgCards {
   border-radius: 0px 30px 0px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 360px) {
   /*responsive generales*/
   /*tap bar*/
   .menu {
+    display: block;
     flex-direction: column;
     align-items: center;
   }
@@ -589,9 +603,13 @@ button {
     flex-direction: column;
     align-items: center;
   }
-  .logo {
+  .logoM {
+   
     align-items: center;
-  }
+      }
+      .img{
+        align-items: center;
+      }
   /*footer*/
   footer {
     justify-content: space-around;
