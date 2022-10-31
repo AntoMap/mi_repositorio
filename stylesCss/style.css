@@ -448,7 +448,7 @@ body {
 
 .container-imagen-fondo {
   height: 15%;
-  padding: 15%;
+  padding: 30%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -459,6 +459,9 @@ body {
   margin: 35px 250px;
   padding: 40px;
   border: 100px;
+  display:grid;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .buttonE {
@@ -728,6 +731,18 @@ button {
   .cardsI {
     display: flex;
     justify-content: center;
+  }
+  .bodyForm {
+    background-color: #EAE5D1;
+    margin: 35px 100px;
+    padding: 40px;
+    border: 100px;
+    display:grid;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .cardsPresupuesto{
+align-items: center;
   }
 
   /*footer*/
